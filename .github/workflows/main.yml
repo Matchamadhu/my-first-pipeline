@@ -1,0 +1,25 @@
+name: My first github actions
+
+on:
+  push:
+    branch:
+      -main
+
+name: My First GitHub Actions Workflow
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Run hello message
+        run: echo "Hello Madhu! Your first pipeline is running successfully 🎉"
+
