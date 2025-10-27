@@ -1,9 +1,3 @@
-name: My first github actions
-
-on:
-  push:
-    branch:
-      -main
 
 name: My First GitHub Actions Workflow
 
